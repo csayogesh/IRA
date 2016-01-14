@@ -37,6 +37,7 @@ public class Utility {
 		return x + 1;
 	}
 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static ArrayList<Integer> p2() {
 		ArrayList<Integer> res = new ArrayList();
 		int cnt = 1000000;

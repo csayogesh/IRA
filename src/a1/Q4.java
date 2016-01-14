@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Karger {
+public class Q4 {
 	public static int n = 50;
 	public static int[] parent = new int[n];
 	public static boolean[][] adj = new boolean[n][];

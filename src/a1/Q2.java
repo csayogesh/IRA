@@ -3,7 +3,7 @@ package a1;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Utility {
+public class Q2 {
 	public static Random rand = new Random();
 
 	public static int randbit() {

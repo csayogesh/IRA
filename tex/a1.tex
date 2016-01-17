@@ -1,5 +1,8 @@
 \documentclass{article}
-%\usepackage{graphicx}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[document]{ragged2e}
 
 \begin{document}
 
@@ -8,25 +11,55 @@
 
 \maketitle
 
+\begin{itemize}
 
 
-\section{Question 1}
+\item Question 1
+\begin{itemize}
+\item Any number in range $\{0,...,2^{k}-1\}$ can be represented as unique sequence of $k$
+bits in its binary form.
+\item If we call $rangebit$ $k$ times it will generate a number in range $\{0,...,2^{k}-1\}$.
+\item Each number would occur with probabilty $p$,
+\begin{flushleft}
+\begin{equation}
+    p(x) = p_1*p_2*...*p_k
+\end{equation}
+\begin{equation}
+    p(x) = \frac{1}{2} * \frac{1}{2} *...*\frac{1}{2}
+\end{equation}
+\begin{equation}
+    p(x) = \frac{1}{2^{k}}
+\end{equation}
+\end{flushleft}
+\item If $n$ is a power of $2$ then $n=2^{ \lg n }$, in this case Equation 3 becomes,
+   \begin{equation}
+    p(x) = \frac{1}{2^{\lg n}}
+\end{equation}
+\begin{equation}
+    p(x) = \frac{1}{n}
+\end{equation}
+\item If $n$ is not a power of $2$ then we can generate $\left \lceil \lg n \right \rceil$ random bits. This will generate a random number in a range $\{0,...,2^{\left \lceil \lg n \right \rceil}\}$.
+\end{itemize}
 
-Here is the text of your introduction. We use some Latin nonsense text to fill
-the paragraphs. This way the resulting document will look more like an actual
-scientific paper or so. Here is an equation:
 
-\section{Question 2}
-Longest streak length : 9 \linebreak
-Source file is attached with name Q2.java
 
-\section{Question 3}
+\item Question 2
+\begin{itemize}
+\item Longest streak length : 9 \linebreak
+\item Source file is attached with name $Q2.java$
+\end{itemize}
 
-\section{Question 4}
-Size of a mincut : 24 \linebreak
-Number of iterations needed to detect mincut : 25 \linebreak
-Source file is attached with name Q4.java
 
+
+\item Question 4
+\begin{itemize}
+\item Size of a mincut : 24 \linebreak
+\item Number of iterations needed to detect mincut : 27 \linebreak
+\item Source file is attached with name $Q4.java$
+\end{itemize}
+
+
+\end{itemize}
 
 %\begin{equation}
 %    \label{simple_equation}

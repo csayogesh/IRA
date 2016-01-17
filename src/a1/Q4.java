@@ -73,9 +73,13 @@ public class Q4 {
 
 	public static void main(String[] args) {
 		int min = Integer.MAX_VALUE;
-		int iter = 25;
-		while (iter-- > 0)
-			min = Math.min(min, getMinCut());
-		System.out.println(min);
+		int iter = 1000000;
+		int cnt=0;
+		int tmp=iter;
+		while (tmp-- > 0) {
+			if(24==getMinCut())
+				cnt++;
+		}
+		System.out.println(iter/cnt);
 	}
 }

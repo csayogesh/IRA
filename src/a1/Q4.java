@@ -46,7 +46,8 @@ public class Q4 {
 		for (int i = 0; i < n; i++)
 			ls.add(i);
 		Random r = new Random();
-		while (ls.size() > 2) {
+		int tmp = n - 2;
+		while (tmp-- > 0) {
 			int i = r.nextInt(ls.size());
 			int j = i;
 			while (j == i) {
@@ -54,7 +55,7 @@ public class Q4 {
 			}
 			int x = ls.get(i);
 			int y = ls.get(j);
-			ls.remove(j);
+			ls.remove(i);
 			Union(parent, x, y);
 		}
 	}
@@ -72,14 +73,14 @@ public class Q4 {
 	}
 
 	public static void main(String[] args) {
-		int min = Integer.MAX_VALUE;
-		int iter = 1000000;
-		int cnt=0;
-		int tmp=iter;
-		while (tmp-- > 0) {
-			if(24==getMinCut())
-				cnt++;
-		}
-		System.out.println(iter/cnt);
+		 int min = Integer.MAX_VALUE;
+		 int iter = 3000;
+		 int cnt = 0;
+		 int tmp = iter;
+		 while (tmp-- > 0) {
+		 min = Math.min(min, getMinCut());
+		 }
+		 System.out.println(min);
+		//uniteVertices();
 	}
 }
